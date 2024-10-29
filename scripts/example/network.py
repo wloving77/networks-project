@@ -1,34 +1,41 @@
-from p4utils.mininetlib.network_API import NetworkAPI
+from mininet.net import Mininet
+from mininet.node import OVSController
+from mininet.link import TCLink
+from mininet.cli import CLI
+from mininet.log import setLogLevel
 
-net = NetworkAPI()
+def simple_topology():
+    # Initialize the Mininet with a default controller
+    net = Mininet(controller=OVSController, link=TCLink)
 
+    # Add the default controller
+    controller = net.addController('c0')
 
-net.addP4Switch('s1')
-net.addHost('h1')
-net.addHost('h2')
-net.addHost('h3')
-net.addHost('h4')
+    # Add a switch
+    switch = net.addSwitch('s1')
 
-net.addLink('s1', 'h1')
-net.addLink('s1', 'h2')
-net.addLink('s1', 'h3')
-net.addLink('s1', 'h4')
+    # Add hosts
+    host1 = net.addHost('h1', ip='10.0.0.1/24')
+    host2 = net.addHost('h2', ip='10.0.0.2/24')
+    host3 = net.addHost('h3', ip='10.0.0.3/24')
 
-# net.setIntfPort('s1', 'h1', 1)  # Set the number of the port on s1 facing h1
-# net.setIntfPort('h1', 's1', 0)  # Set the number of the port on h1 facing s1
-# net.setIntfPort('s1', 'h2', 2)  # Set the number of the port on s1 facing h2
-# net.setIntfPort('h2', 's1', 0)  # Set the number of the port on h2 facing s1
-# net.setIntfPort('s1', 'h3', 3)  # Set the number of the port on s1 facing h3
-# net.setIntfPort('h3', 's1', 0)  # Set the number of the port on h3 facing s1
-# net.setIntfPort('s1', 'h4', 4)  # Set the number of the port on s1 facing h4
-# net.setIntfPort('h4', 's1', 0)  # Set the number of the port on h4 facing s1
+    # Add links between the switch and each host
+    net.addLink(host1, switch)
+    net.addLink(host2, switch)
+    net.addLink(host3, switch)
 
-net.setBwAll(5)
+    # Start the network
+    net.start()
 
-net.l3()
+    # Run CLI for interactive commands
+    CLI(net)
 
-net.enablePcapDumpAll()
-net.enableLogAll()
+    # Stop the network after exiting the CLI
+    net.stop()
 
-net.enableCli()
-net.startNetwork()
+if __name__ == '__main__':
+    # Set Mininet logging level to info
+    setLogLevel('info')
+
+    # Run the network topology
+    simple_topology()
