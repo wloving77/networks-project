@@ -1,8 +1,3 @@
-# networks-project
-Project repository for Graduate computer networks at UVA 
-
-# Setup Guide (Windows, Sorry Mateen)
-
 # Instructions for Setting Up and Running a Jupyter Notebook in a QEMU VM
 
 ## Step 1: Download QEMU
