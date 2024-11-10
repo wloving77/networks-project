@@ -14,7 +14,7 @@ net.addHost('h3')
 net.addHost('h4')
 
 # load source p4 file
-net.setP4Source('s1', 'l2_forwarding_packetcounting.p4')
+net.setP4Source('s1', 'l2_forwarding.p4')
 
 # Add links
 net.addLink('s1', 'h1')
