@@ -8,4 +8,4 @@
 
 4. Run `register_read latency_register` in the `thrift` terminal
 
-5. Everytime you rerun the comman in **4** you should see more latency values in nanoseconds.
+5. Everytime you rerun the command in **4** you should see more latency values in nanoseconds.

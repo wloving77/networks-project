@@ -1,304 +1,256 @@
 Packet 1: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 11.19 sec, Packet Rate: 0.09 packets/sec
+Elapsed Time: 0.42 sec, Packet Rate: 2.40 packets/sec
 Packet 2: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 11.22 sec, Packet Rate: 0.18 packets/sec
+Elapsed Time: 0.49 sec, Packet Rate: 4.10 packets/sec
 Packet 3: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 12.22 sec, Packet Rate: 0.25 packets/sec
+Elapsed Time: 1.18 sec, Packet Rate: 2.54 packets/sec
 Packet 4: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 12.35 sec, Packet Rate: 0.32 packets/sec
+Elapsed Time: 1.38 sec, Packet Rate: 2.90 packets/sec
 Packet 5: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 13.30 sec, Packet Rate: 0.38 packets/sec
+Elapsed Time: 2.02 sec, Packet Rate: 2.47 packets/sec
 Packet 6: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 13.44 sec, Packet Rate: 0.45 packets/sec
+Elapsed Time: 2.07 sec, Packet Rate: 2.90 packets/sec
 Packet 7: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 14.31 sec, Packet Rate: 0.49 packets/sec
+Elapsed Time: 3.42 sec, Packet Rate: 2.05 packets/sec
 Packet 8: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 14.44 sec, Packet Rate: 0.55 packets/sec
+Elapsed Time: 3.51 sec, Packet Rate: 2.28 packets/sec
 Packet 9: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 15.36 sec, Packet Rate: 0.59 packets/sec
+Elapsed Time: 4.33 sec, Packet Rate: 2.08 packets/sec
 Packet 10: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 15.46 sec, Packet Rate: 0.65 packets/sec
+Elapsed Time: 4.48 sec, Packet Rate: 2.23 packets/sec
 Packet 11: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 16.27 sec, Packet Rate: 0.68 packets/sec
+Elapsed Time: 5.26 sec, Packet Rate: 2.09 packets/sec
 Packet 12: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 16.36 sec, Packet Rate: 0.73 packets/sec
+Elapsed Time: 5.73 sec, Packet Rate: 2.09 packets/sec
 Packet 13: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 17.33 sec, Packet Rate: 0.75 packets/sec
+Elapsed Time: 6.47 sec, Packet Rate: 2.01 packets/sec
 Packet 14: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 17.46 sec, Packet Rate: 0.80 packets/sec
+Elapsed Time: 6.68 sec, Packet Rate: 2.10 packets/sec
 Packet 15: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 18.35 sec, Packet Rate: 0.82 packets/sec
+Elapsed Time: 7.55 sec, Packet Rate: 1.99 packets/sec
 Packet 16: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 18.39 sec, Packet Rate: 0.87 packets/sec
+Elapsed Time: 7.77 sec, Packet Rate: 2.06 packets/sec
 Packet 17: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 19.38 sec, Packet Rate: 0.88 packets/sec
+Elapsed Time: 8.49 sec, Packet Rate: 2.00 packets/sec
 Packet 18: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 19.43 sec, Packet Rate: 0.93 packets/sec
+Elapsed Time: 8.60 sec, Packet Rate: 2.09 packets/sec
 Packet 19: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 20.39 sec, Packet Rate: 0.93 packets/sec
+Elapsed Time: 9.47 sec, Packet Rate: 2.01 packets/sec
 Packet 20: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 20.46 sec, Packet Rate: 0.98 packets/sec
+Elapsed Time: 9.57 sec, Packet Rate: 2.09 packets/sec
 Packet 21: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 21.45 sec, Packet Rate: 0.98 packets/sec
+Elapsed Time: 10.66 sec, Packet Rate: 1.97 packets/sec
 Packet 22: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 21.54 sec, Packet Rate: 1.02 packets/sec
+Elapsed Time: 10.71 sec, Packet Rate: 2.05 packets/sec
 Packet 23: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 22.40 sec, Packet Rate: 1.03 packets/sec
+Elapsed Time: 11.56 sec, Packet Rate: 1.99 packets/sec
 Packet 24: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 22.50 sec, Packet Rate: 1.07 packets/sec
+Elapsed Time: 11.60 sec, Packet Rate: 2.07 packets/sec
 Packet 25: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 23.45 sec, Packet Rate: 1.07 packets/sec
+Elapsed Time: 12.58 sec, Packet Rate: 1.99 packets/sec
 Packet 26: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 23.52 sec, Packet Rate: 1.11 packets/sec
+Elapsed Time: 12.72 sec, Packet Rate: 2.04 packets/sec
 Packet 27: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 24.47 sec, Packet Rate: 1.10 packets/sec
+Elapsed Time: 13.65 sec, Packet Rate: 1.98 packets/sec
 Packet 28: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 24.51 sec, Packet Rate: 1.14 packets/sec
+Elapsed Time: 13.90 sec, Packet Rate: 2.01 packets/sec
 Packet 29: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 25.39 sec, Packet Rate: 1.14 packets/sec
+Elapsed Time: 14.65 sec, Packet Rate: 1.98 packets/sec
 Packet 30: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 25.42 sec, Packet Rate: 1.18 packets/sec
+Elapsed Time: 14.83 sec, Packet Rate: 2.02 packets/sec
 Packet 31: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 26.43 sec, Packet Rate: 1.17 packets/sec
+Elapsed Time: 15.51 sec, Packet Rate: 2.00 packets/sec
 Packet 32: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 26.54 sec, Packet Rate: 1.21 packets/sec
+Elapsed Time: 15.69 sec, Packet Rate: 2.04 packets/sec
 Packet 33: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 27.43 sec, Packet Rate: 1.20 packets/sec
+Elapsed Time: 16.68 sec, Packet Rate: 1.98 packets/sec
 Packet 34: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 27.51 sec, Packet Rate: 1.24 packets/sec
+Elapsed Time: 16.84 sec, Packet Rate: 2.02 packets/sec
 Packet 35: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 28.52 sec, Packet Rate: 1.23 packets/sec
+Elapsed Time: 17.62 sec, Packet Rate: 1.99 packets/sec
 Packet 36: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 28.55 sec, Packet Rate: 1.26 packets/sec
+Elapsed Time: 17.70 sec, Packet Rate: 2.03 packets/sec
 Packet 37: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 29.46 sec, Packet Rate: 1.26 packets/sec
+Elapsed Time: 18.67 sec, Packet Rate: 1.98 packets/sec
 Packet 38: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 29.52 sec, Packet Rate: 1.29 packets/sec
+Elapsed Time: 18.92 sec, Packet Rate: 2.01 packets/sec
 Packet 39: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 30.44 sec, Packet Rate: 1.28 packets/sec
+Elapsed Time: 19.70 sec, Packet Rate: 1.98 packets/sec
 Packet 40: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 30.58 sec, Packet Rate: 1.31 packets/sec
+Elapsed Time: 19.90 sec, Packet Rate: 2.01 packets/sec
 Packet 41: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 31.51 sec, Packet Rate: 1.30 packets/sec
+Elapsed Time: 20.67 sec, Packet Rate: 1.98 packets/sec
 Packet 42: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 31.60 sec, Packet Rate: 1.33 packets/sec
+Elapsed Time: 20.94 sec, Packet Rate: 2.01 packets/sec
 Packet 43: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 32.48 sec, Packet Rate: 1.32 packets/sec
+Elapsed Time: 21.62 sec, Packet Rate: 1.99 packets/sec
 Packet 44: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 32.51 sec, Packet Rate: 1.35 packets/sec
+Elapsed Time: 21.66 sec, Packet Rate: 2.03 packets/sec
 Packet 45: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 33.50 sec, Packet Rate: 1.34 packets/sec
+Elapsed Time: 22.84 sec, Packet Rate: 1.97 packets/sec
 Packet 46: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 33.62 sec, Packet Rate: 1.37 packets/sec
+Elapsed Time: 23.06 sec, Packet Rate: 2.00 packets/sec
 Packet 47: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 34.47 sec, Packet Rate: 1.36 packets/sec
+Elapsed Time: 23.87 sec, Packet Rate: 1.97 packets/sec
 Packet 48: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 34.57 sec, Packet Rate: 1.39 packets/sec
+Elapsed Time: 23.90 sec, Packet Rate: 2.01 packets/sec
 Packet 49: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 35.49 sec, Packet Rate: 1.38 packets/sec
+Elapsed Time: 24.84 sec, Packet Rate: 1.97 packets/sec
 Packet 50: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 35.52 sec, Packet Rate: 1.41 packets/sec
+Elapsed Time: 25.05 sec, Packet Rate: 2.00 packets/sec
 Packet 51: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 36.53 sec, Packet Rate: 1.40 packets/sec
+Elapsed Time: 25.94 sec, Packet Rate: 1.97 packets/sec
 Packet 52: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 36.63 sec, Packet Rate: 1.42 packets/sec
+Elapsed Time: 26.03 sec, Packet Rate: 2.00 packets/sec
 Packet 53: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 37.57 sec, Packet Rate: 1.41 packets/sec
+Elapsed Time: 26.81 sec, Packet Rate: 1.98 packets/sec
 Packet 54: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 37.66 sec, Packet Rate: 1.43 packets/sec
+Elapsed Time: 26.99 sec, Packet Rate: 2.00 packets/sec
 Packet 55: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 38.58 sec, Packet Rate: 1.43 packets/sec
+Elapsed Time: 27.87 sec, Packet Rate: 1.97 packets/sec
 Packet 56: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 38.70 sec, Packet Rate: 1.45 packets/sec
+Elapsed Time: 27.97 sec, Packet Rate: 2.00 packets/sec
 Packet 57: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 39.54 sec, Packet Rate: 1.44 packets/sec
+Elapsed Time: 28.96 sec, Packet Rate: 1.97 packets/sec
 Packet 58: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 39.57 sec, Packet Rate: 1.47 packets/sec
+Elapsed Time: 29.07 sec, Packet Rate: 2.00 packets/sec
 Packet 59: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 40.58 sec, Packet Rate: 1.45 packets/sec
+Elapsed Time: 29.71 sec, Packet Rate: 1.99 packets/sec
 Packet 60: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 40.65 sec, Packet Rate: 1.48 packets/sec
+Elapsed Time: 29.72 sec, Packet Rate: 2.02 packets/sec
 Packet 61: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 41.59 sec, Packet Rate: 1.47 packets/sec
+Elapsed Time: 30.94 sec, Packet Rate: 1.97 packets/sec
 Packet 62: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 41.72 sec, Packet Rate: 1.49 packets/sec
+Elapsed Time: 31.10 sec, Packet Rate: 1.99 packets/sec
 Packet 63: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 42.58 sec, Packet Rate: 1.48 packets/sec
+Elapsed Time: 32.00 sec, Packet Rate: 1.97 packets/sec
 Packet 64: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 42.63 sec, Packet Rate: 1.50 packets/sec
+Elapsed Time: 32.14 sec, Packet Rate: 1.99 packets/sec
 Packet 65: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 43.65 sec, Packet Rate: 1.49 packets/sec
+Elapsed Time: 33.01 sec, Packet Rate: 1.97 packets/sec
 Packet 66: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 43.71 sec, Packet Rate: 1.51 packets/sec
+Elapsed Time: 33.25 sec, Packet Rate: 1.98 packets/sec
 Packet 67: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 44.65 sec, Packet Rate: 1.50 packets/sec
+Elapsed Time: 33.77 sec, Packet Rate: 1.98 packets/sec
 Packet 68: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 44.71 sec, Packet Rate: 1.52 packets/sec
+Elapsed Time: 33.86 sec, Packet Rate: 2.01 packets/sec
 Packet 69: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 45.63 sec, Packet Rate: 1.51 packets/sec
+Elapsed Time: 35.09 sec, Packet Rate: 1.97 packets/sec
 Packet 70: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 45.67 sec, Packet Rate: 1.53 packets/sec
+Elapsed Time: 35.23 sec, Packet Rate: 1.99 packets/sec
 Packet 71: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 46.68 sec, Packet Rate: 1.52 packets/sec
+Elapsed Time: 36.04 sec, Packet Rate: 1.97 packets/sec
 Packet 72: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 46.83 sec, Packet Rate: 1.54 packets/sec
+Elapsed Time: 36.09 sec, Packet Rate: 1.99 packets/sec
 Packet 73: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 47.71 sec, Packet Rate: 1.53 packets/sec
+Elapsed Time: 37.07 sec, Packet Rate: 1.97 packets/sec
 Packet 74: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 47.76 sec, Packet Rate: 1.55 packets/sec
+Elapsed Time: 37.20 sec, Packet Rate: 1.99 packets/sec
 Packet 75: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 48.64 sec, Packet Rate: 1.54 packets/sec
+Elapsed Time: 38.00 sec, Packet Rate: 1.97 packets/sec
 Packet 76: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 48.70 sec, Packet Rate: 1.56 packets/sec
+Elapsed Time: 38.01 sec, Packet Rate: 2.00 packets/sec
 Packet 77: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 49.67 sec, Packet Rate: 1.55 packets/sec
+Elapsed Time: 39.00 sec, Packet Rate: 1.97 packets/sec
 Packet 78: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 49.78 sec, Packet Rate: 1.57 packets/sec
+Elapsed Time: 39.16 sec, Packet Rate: 1.99 packets/sec
 Packet 79: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 50.69 sec, Packet Rate: 1.56 packets/sec
+Elapsed Time: 40.08 sec, Packet Rate: 1.97 packets/sec
 Packet 80: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 50.76 sec, Packet Rate: 1.58 packets/sec
+Elapsed Time: 40.14 sec, Packet Rate: 1.99 packets/sec
 Packet 81: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 51.71 sec, Packet Rate: 1.57 packets/sec
+Elapsed Time: 41.15 sec, Packet Rate: 1.97 packets/sec
 Packet 82: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 51.79 sec, Packet Rate: 1.58 packets/sec
+Elapsed Time: 41.26 sec, Packet Rate: 1.99 packets/sec
 Packet 83: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 52.71 sec, Packet Rate: 1.57 packets/sec
+Elapsed Time: 42.19 sec, Packet Rate: 1.97 packets/sec
 Packet 84: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 52.75 sec, Packet Rate: 1.59 packets/sec
+Elapsed Time: 42.34 sec, Packet Rate: 1.98 packets/sec
 Packet 85: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 53.75 sec, Packet Rate: 1.58 packets/sec
+Elapsed Time: 43.14 sec, Packet Rate: 1.97 packets/sec
 Packet 86: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 53.85 sec, Packet Rate: 1.60 packets/sec
+Elapsed Time: 43.25 sec, Packet Rate: 1.99 packets/sec
 Packet 87: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 54.77 sec, Packet Rate: 1.59 packets/sec
+Elapsed Time: 44.27 sec, Packet Rate: 1.97 packets/sec
 Packet 88: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 54.85 sec, Packet Rate: 1.60 packets/sec
+Elapsed Time: 44.45 sec, Packet Rate: 1.98 packets/sec
 Packet 89: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 55.79 sec, Packet Rate: 1.60 packets/sec
+Elapsed Time: 44.97 sec, Packet Rate: 1.98 packets/sec
 Packet 90: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 55.89 sec, Packet Rate: 1.61 packets/sec
+Elapsed Time: 45.11 sec, Packet Rate: 1.99 packets/sec
 Packet 91: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 56.81 sec, Packet Rate: 1.60 packets/sec
+Elapsed Time: 46.21 sec, Packet Rate: 1.97 packets/sec
 Packet 92: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 56.87 sec, Packet Rate: 1.62 packets/sec
+Elapsed Time: 46.30 sec, Packet Rate: 1.99 packets/sec
 Packet 93: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 57.75 sec, Packet Rate: 1.61 packets/sec
+Elapsed Time: 46.94 sec, Packet Rate: 1.98 packets/sec
 Packet 94: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 57.80 sec, Packet Rate: 1.63 packets/sec
+Elapsed Time: 47.03 sec, Packet Rate: 2.00 packets/sec
 Packet 95: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 58.84 sec, Packet Rate: 1.61 packets/sec
+Elapsed Time: 48.17 sec, Packet Rate: 1.97 packets/sec
 Packet 96: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 58.89 sec, Packet Rate: 1.63 packets/sec
+Elapsed Time: 48.17 sec, Packet Rate: 1.99 packets/sec
 Packet 97: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 59.85 sec, Packet Rate: 1.62 packets/sec
+Elapsed Time: 49.12 sec, Packet Rate: 1.97 packets/sec
 Packet 98: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 59.96 sec, Packet Rate: 1.63 packets/sec
+Elapsed Time: 49.16 sec, Packet Rate: 1.99 packets/sec
 Packet 99: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 60.77 sec, Packet Rate: 1.63 packets/sec
+Elapsed Time: 50.07 sec, Packet Rate: 1.98 packets/sec
 Packet 100: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 60.82 sec, Packet Rate: 1.64 packets/sec
+Elapsed Time: 50.09 sec, Packet Rate: 2.00 packets/sec
 Packet 101: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 61.82 sec, Packet Rate: 1.63 packets/sec
+Elapsed Time: 51.30 sec, Packet Rate: 1.97 packets/sec
 Packet 102: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 61.93 sec, Packet Rate: 1.65 packets/sec
+Elapsed Time: 51.50 sec, Packet Rate: 1.98 packets/sec
 Packet 103: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 62.86 sec, Packet Rate: 1.64 packets/sec
+Elapsed Time: 52.21 sec, Packet Rate: 1.97 packets/sec
 Packet 104: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 62.97 sec, Packet Rate: 1.65 packets/sec
+Elapsed Time: 52.45 sec, Packet Rate: 1.98 packets/sec
 Packet 105: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 63.81 sec, Packet Rate: 1.65 packets/sec
+Elapsed Time: 53.32 sec, Packet Rate: 1.97 packets/sec
 Packet 106: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 63.86 sec, Packet Rate: 1.66 packets/sec
+Elapsed Time: 53.62 sec, Packet Rate: 1.98 packets/sec
 Packet 107: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 64.89 sec, Packet Rate: 1.65 packets/sec
+Elapsed Time: 54.24 sec, Packet Rate: 1.97 packets/sec
 Packet 108: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 64.98 sec, Packet Rate: 1.66 packets/sec
+Elapsed Time: 54.32 sec, Packet Rate: 1.99 packets/sec
 Packet 109: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 65.87 sec, Packet Rate: 1.65 packets/sec
+Elapsed Time: 55.12 sec, Packet Rate: 1.98 packets/sec
 Packet 110: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 66.01 sec, Packet Rate: 1.67 packets/sec
+Elapsed Time: 55.26 sec, Packet Rate: 1.99 packets/sec
 Packet 111: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 66.88 sec, Packet Rate: 1.66 packets/sec
+Elapsed Time: 56.15 sec, Packet Rate: 1.98 packets/sec
 Packet 112: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 66.92 sec, Packet Rate: 1.67 packets/sec
+Elapsed Time: 56.21 sec, Packet Rate: 1.99 packets/sec
 Packet 113: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 67.92 sec, Packet Rate: 1.66 packets/sec
+Elapsed Time: 57.25 sec, Packet Rate: 1.97 packets/sec
 Packet 114: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 68.05 sec, Packet Rate: 1.68 packets/sec
+Elapsed Time: 57.49 sec, Packet Rate: 1.98 packets/sec
 Packet 115: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 68.94 sec, Packet Rate: 1.67 packets/sec
+Elapsed Time: 58.19 sec, Packet Rate: 1.98 packets/sec
 Packet 116: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 69.00 sec, Packet Rate: 1.68 packets/sec
+Elapsed Time: 58.50 sec, Packet Rate: 1.98 packets/sec
 Packet 117: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 69.91 sec, Packet Rate: 1.67 packets/sec
+Elapsed Time: 59.38 sec, Packet Rate: 1.97 packets/sec
 Packet 118: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 69.95 sec, Packet Rate: 1.69 packets/sec
+Elapsed Time: 59.50 sec, Packet Rate: 1.98 packets/sec
 Packet 119: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 70.97 sec, Packet Rate: 1.68 packets/sec
+Elapsed Time: 60.40 sec, Packet Rate: 1.97 packets/sec
 Packet 120: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 71.00 sec, Packet Rate: 1.69 packets/sec
+Elapsed Time: 60.56 sec, Packet Rate: 1.98 packets/sec
 Packet 121: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 71.88 sec, Packet Rate: 1.68 packets/sec
+Elapsed Time: 61.35 sec, Packet Rate: 1.97 packets/sec
 Packet 122: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 71.96 sec, Packet Rate: 1.70 packets/sec
+Elapsed Time: 61.44 sec, Packet Rate: 1.99 packets/sec
 Packet 123: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 72.96 sec, Packet Rate: 1.69 packets/sec
+Elapsed Time: 62.42 sec, Packet Rate: 1.97 packets/sec
 Packet 124: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 73.08 sec, Packet Rate: 1.70 packets/sec
+Elapsed Time: 62.67 sec, Packet Rate: 1.98 packets/sec
 Packet 125: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 73.94 sec, Packet Rate: 1.69 packets/sec
+Elapsed Time: 63.51 sec, Packet Rate: 1.97 packets/sec
 Packet 126: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 74.00 sec, Packet Rate: 1.70 packets/sec
+Elapsed Time: 63.66 sec, Packet Rate: 1.98 packets/sec
 Packet 127: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 74.94 sec, Packet Rate: 1.69 packets/sec
+Elapsed Time: 64.50 sec, Packet Rate: 1.97 packets/sec
 Packet 128: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 74.97 sec, Packet Rate: 1.71 packets/sec
-Packet 129: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 75.96 sec, Packet Rate: 1.70 packets/sec
-Packet 130: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 76.02 sec, Packet Rate: 1.71 packets/sec
-Packet 131: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 76.99 sec, Packet Rate: 1.70 packets/sec
-Packet 132: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 77.06 sec, Packet Rate: 1.71 packets/sec
-Packet 133: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 78.03 sec, Packet Rate: 1.70 packets/sec
-Packet 134: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 78.16 sec, Packet Rate: 1.71 packets/sec
-Packet 135: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 79.01 sec, Packet Rate: 1.71 packets/sec
-Packet 136: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 79.11 sec, Packet Rate: 1.72 packets/sec
-Packet 137: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 79.99 sec, Packet Rate: 1.71 packets/sec
-Packet 138: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 80.02 sec, Packet Rate: 1.72 packets/sec
-Packet 139: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 80.99 sec, Packet Rate: 1.72 packets/sec
-Packet 140: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 81.01 sec, Packet Rate: 1.73 packets/sec
-Packet 141: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 82.00 sec, Packet Rate: 1.72 packets/sec
-Packet 142: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 82.05 sec, Packet Rate: 1.73 packets/sec
-Packet 143: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 83.10 sec, Packet Rate: 1.72 packets/sec
-Packet 144: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 83.15 sec, Packet Rate: 1.73 packets/sec
-Packet 145: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 84.08 sec, Packet Rate: 1.72 packets/sec
-Packet 146: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 84.13 sec, Packet Rate: 1.74 packets/sec
-Packet 147: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 85.17 sec, Packet Rate: 1.73 packets/sec
-Packet 148: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 85.23 sec, Packet Rate: 1.74 packets/sec
-Packet 149: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 86.08 sec, Packet Rate: 1.73 packets/sec
-Packet 150: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 86.12 sec, Packet Rate: 1.74 packets/sec
-Packet 151: Ether / IP / ICMP 10.0.0.2 > 10.0.0.1 echo-request 0 / Raw
-Elapsed Time: 87.11 sec, Packet Rate: 1.73 packets/sec
-Packet 152: Ether / IP / ICMP 10.0.0.1 > 10.0.0.2 echo-reply 0 / Raw
-Elapsed Time: 87.15 sec, Packet Rate: 1.74 packets/sec
+Elapsed Time: 64.93 sec, Packet Rate: 1.97 packets/sec
