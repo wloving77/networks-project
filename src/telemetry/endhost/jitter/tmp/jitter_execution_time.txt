@@ -1,0 +1,15 @@
+
+Average Jitter: 0.24 ms
+Total Execution Time: 379.34 ms
+
+Average Jitter: 0.29 ms
+Total Execution Time: 380.92 ms
+
+Average Jitter: 0.45 ms
+Total Execution Time: 390.83 ms
+
+Average Jitter: 0.24 ms
+Total Execution Time: 378.89 ms
+
+Average Jitter: 0.28 ms
+Total Execution Time: 337.91 ms
