@@ -95,8 +95,8 @@ def main():
     # for i, jitter in enumerate(jitter_values):
     #     print(f"Jitter Sample {i + 1}: {jitter:.2f} ms")
 
-    print(f"\nAverage Jitter: {avg_jitter:.2f} ms")
-    print(f"Total Execution Time: {execution_time:.2f} ms")
+    # print(f"\nAverage Jitter: {avg_jitter:.2f} ms")
+    print(f"Total Execution Time for 200 Packets: {execution_time:.2f} ms")
 
 
 if __name__ == "__main__":
