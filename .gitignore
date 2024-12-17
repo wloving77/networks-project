@@ -4,3 +4,6 @@ log/
 __pycache__
 .venv/
 
+latency_results_jitter.txt
+latency_results_packet_counting.txt
+latency_results_rtt.txt
