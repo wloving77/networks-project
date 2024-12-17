@@ -60,9 +60,9 @@ def plot_endhost_execution_times(rtt_times, jitter_times, packet_counting_times)
         marker="o",
     )
 
-    plt.title("Execution Times for 200 Packets")
+    plt.title("Execution Times for 1000 Packets")
     plt.xlabel("Sample (1-15)")
-    plt.ylabel("Total Execution Time for 200 Packets (ms)")
+    plt.ylabel("Total Execution Time for 1000 Packets (ms)")
     plt.legend(loc="best")
     plt.grid(True)
     plt.show()

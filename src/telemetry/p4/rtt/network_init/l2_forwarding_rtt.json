@@ -1,0 +1,823 @@
+{
+  "header_types" : [
+    {
+      "name" : "scalars_0",
+      "id" : 0,
+      "fields" : [
+        ["tmp", 32, false],
+        ["metadata_t.ingress_ts", 48, false],
+        ["metadata_t.egress_ts", 48, false],
+        ["metadata_t.rtt", 48, false],
+        ["metadata_t.index", 32, false],
+        ["metadata_t.is_mirrored", 1, false],
+        ["_padding_0", 7, false]
+      ]
+    },
+    {
+      "name" : "standard_metadata",
+      "id" : 1,
+      "fields" : [
+        ["ingress_port", 9, false],
+        ["egress_spec", 9, false],
+        ["egress_port", 9, false],
+        ["instance_type", 32, false],
+        ["packet_length", 32, false],
+        ["enq_timestamp", 32, false],
+        ["enq_qdepth", 19, false],
+        ["deq_timedelta", 32, false],
+        ["deq_qdepth", 19, false],
+        ["ingress_global_timestamp", 48, false],
+        ["egress_global_timestamp", 48, false],
+        ["mcast_grp", 16, false],
+        ["egress_rid", 16, false],
+        ["checksum_error", 1, false],
+        ["parser_error", 32, false],
+        ["priority", 3, false],
+        ["_padding", 3, false]
+      ]
+    },
+    {
+      "name" : "ethernet_t",
+      "id" : 2,
+      "fields" : [
+        ["dstAddr", 48, false],
+        ["srcAddr", 48, false],
+        ["etherType", 16, false]
+      ]
+    }
+  ],
+  "headers" : [
+    {
+      "name" : "scalars",
+      "id" : 0,
+      "header_type" : "scalars_0",
+      "metadata" : true,
+      "pi_omit" : true
+    },
+    {
+      "name" : "standard_metadata",
+      "id" : 1,
+      "header_type" : "standard_metadata",
+      "metadata" : true,
+      "pi_omit" : true
+    },
+    {
+      "name" : "ethernet",
+      "id" : 2,
+      "header_type" : "ethernet_t",
+      "metadata" : false,
+      "pi_omit" : true
+    }
+  ],
+  "header_stacks" : [],
+  "header_union_types" : [],
+  "header_unions" : [],
+  "header_union_stacks" : [],
+  "field_lists" : [],
+  "errors" : [
+    ["NoError", 0],
+    ["PacketTooShort", 1],
+    ["NoMatch", 2],
+    ["StackOutOfBounds", 3],
+    ["HeaderTooShort", 4],
+    ["ParserTimeout", 5],
+    ["ParserInvalidArgument", 6]
+  ],
+  "enums" : [],
+  "parsers" : [
+    {
+      "name" : "parser",
+      "id" : 0,
+      "init_state" : "start",
+      "parse_states" : [
+        {
+          "name" : "start",
+          "id" : 0,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "ethernet"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "default",
+              "value" : null,
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : []
+        }
+      ]
+    }
+  ],
+  "parse_vsets" : [],
+  "deparsers" : [
+    {
+      "name" : "deparser",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+        "line" : 125,
+        "column" : 8,
+        "source_fragment" : "MyDeparser"
+      },
+      "order" : ["ethernet"],
+      "primitives" : []
+    }
+  ],
+  "meter_arrays" : [],
+  "counter_arrays" : [],
+  "register_arrays" : [
+    {
+      "name" : "MyEgress.latency_register",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+        "line" : 82,
+        "column" : 29,
+        "source_fragment" : "latency_register"
+      },
+      "size" : 15000,
+      "bitwidth" : 48
+    },
+    {
+      "name" : "MyEgress.index_register",
+      "id" : 1,
+      "source_info" : {
+        "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+        "line" : 83,
+        "column" : 25,
+        "source_fragment" : "index_register"
+      },
+      "size" : 1,
+      "bitwidth" : 32
+    }
+  ],
+  "calculations" : [],
+  "learn_lists" : [],
+  "actions" : [
+    {
+      "name" : "MyIngress.record_ingress_timestamp",
+      "id" : 0,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata_t.ingress_ts"]
+            },
+            {
+              "type" : "field",
+              "value" : ["standard_metadata", "ingress_global_timestamp"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 43,
+            "column" : 8,
+            "source_fragment" : "meta.ingress_ts = standard_metadata.ingress_global_timestamp"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata_t.is_mirrored"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x01"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 44,
+            "column" : 8,
+            "source_fragment" : "meta.is_mirrored = 1"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.forward",
+      "id" : 1,
+      "runtime_data" : [
+        {
+          "name" : "port",
+          "bitwidth" : 9
+        }
+      ],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["standard_metadata", "egress_spec"]
+            },
+            {
+              "type" : "runtime_data",
+              "value" : 0
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 48,
+            "column" : 8,
+            "source_fragment" : "standard_metadata.egress_spec = port"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.flood",
+      "id" : 2,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["standard_metadata", "mcast_grp"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0001"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 52,
+            "column" : 8,
+            "source_fragment" : "standard_metadata.mcast_grp = 1"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyEgress.store_rtt",
+      "id" : 3,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyEgress.latency_register"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata_t.index"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata_t.rtt"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 88,
+            "column" : 8,
+            "source_fragment" : "latency_register.write(index, latency)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyEgress.increment_index",
+      "id" : 4,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "+",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "metadata_t.index"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x00000001"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xffffffff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 93,
+            "column" : 32,
+            "source_fragment" : "current_index + 1"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "MyEgress.index_register"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 93,
+            "column" : 8,
+            "source_fragment" : "index_register.write(0, current_index + 1)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "l2_forwarding_rtt103",
+      "id" : 5,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata_t.egress_ts"]
+            },
+            {
+              "type" : "field",
+              "value" : ["standard_metadata", "egress_global_timestamp"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 103,
+            "column" : 16,
+            "source_fragment" : "meta.egress_ts = standard_metadata.egress_global_timestamp"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata_t.rtt"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "-",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["standard_metadata", "egress_global_timestamp"]
+                      },
+                      "right" : {
+                        "type" : "field",
+                        "value" : ["scalars", "metadata_t.ingress_ts"]
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xffffffffffff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 106,
+            "column" : 16,
+            "source_fragment" : "meta.rtt = meta.egress_ts - meta.ingress_ts"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "l2_forwarding_rtt99",
+      "id" : 6,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "register_read",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata_t.index"]
+            },
+            {
+              "type" : "register_array",
+              "value" : "MyEgress.index_register"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x00000000"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 99,
+            "column" : 12,
+            "source_fragment" : "index_register.read(meta.index, 0)"
+          }
+        }
+      ]
+    }
+  ],
+  "pipelines" : [
+    {
+      "name" : "ingress",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+        "line" : 37,
+        "column" : 8,
+        "source_fragment" : "MyIngress"
+      },
+      "init_table" : "node_2",
+      "tables" : [
+        {
+          "name" : "tbl_record_ingress_timestamp",
+          "id" : 0,
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 70,
+            "column" : 12,
+            "source_fragment" : "record_ingress_timestamp()"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [0],
+          "actions" : ["MyIngress.record_ingress_timestamp"],
+          "base_default_next" : "MyIngress.mac_table",
+          "next_tables" : {
+            "MyIngress.record_ingress_timestamp" : "MyIngress.mac_table"
+          },
+          "default_entry" : {
+            "action_id" : 0,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "MyIngress.mac_table",
+          "id" : 1,
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 56,
+            "column" : 10,
+            "source_fragment" : "mac_table"
+          },
+          "key" : [
+            {
+              "match_type" : "exact",
+              "name" : "hdr.ethernet.dstAddr",
+              "target" : ["ethernet", "dstAddr"],
+              "mask" : null
+            }
+          ],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [1, 2],
+          "actions" : ["MyIngress.forward", "MyIngress.flood"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "MyIngress.forward" : null,
+            "MyIngress.flood" : null
+          },
+          "default_entry" : {
+            "action_id" : 2,
+            "action_const" : false,
+            "action_data" : [],
+            "action_entry_const" : false
+          }
+        }
+      ],
+      "action_profiles" : [],
+      "conditionals" : [
+        {
+          "name" : "node_2",
+          "id" : 0,
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 69,
+            "column" : 12,
+            "source_fragment" : "hdr.ethernet.isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["ethernet", "$valid$"]
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "tbl_record_ingress_timestamp"
+        }
+      ]
+    },
+    {
+      "name" : "egress",
+      "id" : 1,
+      "source_info" : {
+        "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+        "line" : 77,
+        "column" : 8,
+        "source_fragment" : "MyEgress"
+      },
+      "init_table" : "node_7",
+      "tables" : [
+        {
+          "name" : "tbl_l2_forwarding_rtt99",
+          "id" : 2,
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 99,
+            "column" : 12,
+            "source_fragment" : "index_register.read(meta.index, 0)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [6],
+          "actions" : ["l2_forwarding_rtt99"],
+          "base_default_next" : "node_9",
+          "next_tables" : {
+            "l2_forwarding_rtt99" : "node_9"
+          },
+          "default_entry" : {
+            "action_id" : 6,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_l2_forwarding_rtt103",
+          "id" : 3,
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 103,
+            "column" : 31,
+            "source_fragment" : "= standard_metadata.egress_global_timestamp; ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [5],
+          "actions" : ["l2_forwarding_rtt103"],
+          "base_default_next" : "tbl_store_rtt",
+          "next_tables" : {
+            "l2_forwarding_rtt103" : "tbl_store_rtt"
+          },
+          "default_entry" : {
+            "action_id" : 5,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_store_rtt",
+          "id" : 4,
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 109,
+            "column" : 16,
+            "source_fragment" : "store_rtt(meta.index, meta.rtt)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [3],
+          "actions" : ["MyEgress.store_rtt"],
+          "base_default_next" : "tbl_increment_index",
+          "next_tables" : {
+            "MyEgress.store_rtt" : "tbl_increment_index"
+          },
+          "default_entry" : {
+            "action_id" : 3,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_increment_index",
+          "id" : 5,
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 112,
+            "column" : 16,
+            "source_fragment" : "increment_index(meta.index)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [4],
+          "actions" : ["MyEgress.increment_index"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "MyEgress.increment_index" : null
+          },
+          "default_entry" : {
+            "action_id" : 4,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        }
+      ],
+      "action_profiles" : [],
+      "conditionals" : [
+        {
+          "name" : "node_7",
+          "id" : 1,
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 97,
+            "column" : 12,
+            "source_fragment" : "hdr.ethernet.isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["ethernet", "$valid$"]
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "tbl_l2_forwarding_rtt99"
+        },
+        {
+          "name" : "node_9",
+          "id" : 2,
+          "source_info" : {
+            "filename" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4",
+            "line" : 101,
+            "column" : 16,
+            "source_fragment" : "meta.is_mirrored == 1 && meta.index < 15000"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "and",
+              "left" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "==",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "metadata_t.is_mirrored"]
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0x01"
+                  }
+                }
+              },
+              "right" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "<",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "metadata_t.index"]
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0x00003a98"
+                  }
+                }
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "tbl_l2_forwarding_rtt103"
+        }
+      ]
+    }
+  ],
+  "checksums" : [],
+  "force_arith" : [],
+  "extern_instances" : [],
+  "field_aliases" : [
+    [
+      "queueing_metadata.enq_timestamp",
+      ["standard_metadata", "enq_timestamp"]
+    ],
+    [
+      "queueing_metadata.enq_qdepth",
+      ["standard_metadata", "enq_qdepth"]
+    ],
+    [
+      "queueing_metadata.deq_timedelta",
+      ["standard_metadata", "deq_timedelta"]
+    ],
+    [
+      "queueing_metadata.deq_qdepth",
+      ["standard_metadata", "deq_qdepth"]
+    ],
+    [
+      "intrinsic_metadata.ingress_global_timestamp",
+      ["standard_metadata", "ingress_global_timestamp"]
+    ],
+    [
+      "intrinsic_metadata.egress_global_timestamp",
+      ["standard_metadata", "egress_global_timestamp"]
+    ],
+    [
+      "intrinsic_metadata.mcast_grp",
+      ["standard_metadata", "mcast_grp"]
+    ],
+    [
+      "intrinsic_metadata.egress_rid",
+      ["standard_metadata", "egress_rid"]
+    ],
+    [
+      "intrinsic_metadata.priority",
+      ["standard_metadata", "priority"]
+    ]
+  ],
+  "program" : "/home/sdn/Documents/Githubs/networks-project/src/telemetry/p4/rtt/network_init/l2_forwarding_rtt.p4i",
+  "__meta__" : {
+    "version" : [2, 23],
+    "compiler" : "https://github.com/p4lang/p4c"
+  }
+}

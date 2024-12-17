@@ -2,43 +2,36 @@ import subprocess
 import time
 
 
-def measure_jitter(dst_ip, num_samples=10):
-    """
-    Measures network jitter to a destination host using ICMP ping.
+def perform_ping(dst_ip):
+    result = subprocess.run(
+        ["ping", "-c", "1", "-W", "1", dst_ip],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
 
-    Args:
-        dst_ip (str): IP address of the destination host (e.g., '10.0.0.2').
-        num_samples (int): Number of RTT samples to collect.
+    return result
 
-    Returns:
-        tuple: A list of jitter values in milliseconds and the average jitter.
-    """
+
+def measure_jitter(ping_results):
     rtt_samples = []
 
-    for i in range(num_samples):
+    for ping_result in ping_results:
         try:
-            # Execute a single ping command
-            result = subprocess.run(
-                ["ping", "-c", "1", "-W", "1", dst_ip],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                text=True,
-            )
-            if result.returncode == 0:
+            if ping_result.returncode == 0:
                 # Parse RTT from the output
-                for line in result.stdout.splitlines():
+                for line in ping_result.stdout.splitlines():
                     if "time=" in line:
                         rtt = float(line.split("time=")[1].split(" ")[0])
                         rtt_samples.append(rtt)
                         break
             else:
-                print(f"Ping {i + 1} failed.")
+                # print(f"Ping {i + 1} failed.")
                 rtt_samples.append(None)  # Append None for failed pings
         except Exception as e:
-            print(f"Error during ping: {e}")
+            # print(f"Error during ping: {e}")
             rtt_samples.append(None)
 
-    # Filter out None values
     rtt_samples = [r for r in rtt_samples if r is not None]
 
     # Calculate jitter (absolute differences between consecutive RTTs)
@@ -63,11 +56,16 @@ def time_jitter_application(dst_ip, num_samples=10):
     Returns:
         tuple: Total execution time (ms), list of jitter values (ms), and average jitter (ms).
     """
+    ping_results = []
+    for i in range(num_samples):
+        ping_result = perform_ping(dst_ip)
+        ping_results.append(ping_result)
+
     # Start timing
     start_time = time.time()
 
     # Measure jitter
-    jitter_values, avg_jitter = measure_jitter(dst_ip, num_samples)
+    jitter_values, avg_jitter = measure_jitter(ping_results)
 
     # End timing
     end_time = time.time()
@@ -83,7 +81,7 @@ def main():
     dst_ip = "10.0.0.2"
 
     # Number of samples
-    num_samples = 200
+    num_samples = 1000
 
     # Run the jitter measurement and timing
     execution_time, jitter_values, avg_jitter = time_jitter_application(
@@ -96,7 +94,7 @@ def main():
     #     print(f"Jitter Sample {i + 1}: {jitter:.2f} ms")
 
     # print(f"\nAverage Jitter: {avg_jitter:.2f} ms")
-    print(f"Total Execution Time for 200 Packets: {execution_time:.2f} ms")
+    print(f"Total Execution Time for {num_samples} Packets: {execution_time:.2f} ms")
 
 
 if __name__ == "__main__":
