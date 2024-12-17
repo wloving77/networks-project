@@ -1,4 +1,4 @@
-# Guide for setting up p4 enabled packet counting:
+# Guide for setting up p4 enabled rtt:
 
 1. Run `cd network_init` and then run `sudo python3 network_p4.py` in a terminal
 
