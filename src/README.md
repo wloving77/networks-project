@@ -1,3 +1,1 @@
-# Directory for Storing Different Telemetry Calculations. 
-
-Currently just packet_counting and an example
+# Directory for Storing Different Telemetry Metric Execution Times for P4 and Endhost Testing
